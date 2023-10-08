@@ -1,5 +1,5 @@
 function fillLiTag(){
-    var elems = document.getElementsByTagName('li');
+    var elems = document.querySelectorAll('body>ul>li')
     var countElem = document.getElementById('liCount');
     for (var i = 0; i<elems.length;i++){
         var currentElem = elems[i];
@@ -9,7 +9,7 @@ function fillLiTag(){
 }
 
 function fillRedBackground(){
-    var elems = document.querySelectorAll('ul>li>a')
+    var elems = document.querySelectorAll('div>ul>li>a')
 
     for(var i = 0; i<elems.length;i++){
         var currentElem = elems[i];
